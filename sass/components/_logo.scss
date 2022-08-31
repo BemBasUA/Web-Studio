@@ -1,0 +1,46 @@
+.logo {
+    display: inline-block;
+    margin-right: auto;
+    padding: 16px 0;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: inherit;
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+        padding: 26px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 95px;
+        font-size: 26px;
+        line-height: 1.19;
+        padding: 24px 0;
+    }
+}
+
+.logo__accent {
+    color: $accent-color;
+}
+
+
+
+
+
+
+
+// .logo {
+//     margin-right: 95px;
+//     padding: 24px 0;
+//     font-family: $logo-font;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     text-decoration: none;
+//     color: inherit;
+// }
+
+// .logo__accent {
+//     color: $accent-color;
+// }

@@ -1,0 +1,104 @@
+.our-team-section {
+    background-color: $primary-background-color;
+}
+.our-team-list {
+    @extend %list;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: calc(-1 * #{$card-set-gap});
+    }
+}
+.our-team-list__img{
+    max-width: 100%;
+}
+.our-team-list__item {
+    text-align: center;
+    background: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: 768px){
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 4 * #{$card-set-gap}) / 2);
+    }
+    @media screen and (min-width: 1200px){
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 8 * #{$card-set-gap}) / 4);
+    }
+}
+.our-team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 4 * #{$card-set-gap}) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 8 * #{$card-set-gap}) / 4);
+    }
+}
+.card {
+    padding: 30px 0;
+}
+.card__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.card__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $secondary-text-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .our-team-section {
+//     background-color: $primary-background-color;
+// }
+// .our-team-list {
+//     @extend %list;
+//     display: flex;
+// }
+// .our-team-list__item {
+//     background: $primary-white-color;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// .our-team-list__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+// .card {
+//     padding: 30px 0;
+// }
+// .card__title {
+//     margin-bottom: 10px;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     color: $primary-text-color;
+// }
+// .card__text {
+//     margin-bottom: 16px;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     color: $secondary-text-color;
+// }

@@ -1,0 +1,98 @@
+.features {
+    @extend %list;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+        margin: calc(-1 * #{$card-set-gap});
+    }
+}
+.features__item {
+    @media screen and (min-width: 768px) {
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 4 * #{$card-set-gap}) / 2);
+    }
+    @media screen and (min-width: 1200px){
+        margin: $card-set-gap;
+        flex-basis: calc((100% - 8 * #{$card-set-gap}) / 4);
+    }
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    
+        @media screen and (min-width: 768px) {
+            margin: $card-set-gap;
+            flex-basis: calc((100% - 4 * #{$card-set-gap}) / 2);
+        }
+        @media screen and (min-width: 1200px) {
+            margin: $card-set-gap;
+            flex-basis: calc((100% - 8 * #{$card-set-gap}) / 4);
+        }
+    }
+}
+.features__thumb {
+    margin-bottom: 30px;
+    padding: 25px 0;
+    border-radius: 4px;
+    background-color: $primary-background-color;
+    @media screen and (min-width: 768px){
+        text-align: center;
+    }
+}
+.features__title {
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.features__text {
+    text-align: start;
+    line-height: 1.71;
+    color: $secondary-text-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .features {
+//     @extend %list;
+//     display: flex;
+// }
+// .features__item {
+//     width: 270px;
+//     &:not(:last-child){
+//         margin-right: 30px;
+//     }
+// }
+// .features__thumb {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+//     background-color: $primary-background-color;
+// }
+// .features__title {
+//     margin-bottom: 10px;
+//     font-size: 14px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+// }
+
+// .features__text {
+//     line-height: 1.71;
+//     color: $secondary-text-color;
+// }
